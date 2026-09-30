@@ -33,6 +33,11 @@ table MarvelFact
 		formatString: #,0
 		lineageTag: 7fb56eb7-be01-4955-92db-9dab09d95a7a
 
+	measure Example = 1 / COUNT('DateDim'[DateID])
+		lineageTag: f924097d-698f-447f-8f61-818c6579ede7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column ID
 		dataType: int64
 		formatString: 0

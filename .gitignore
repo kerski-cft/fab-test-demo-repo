@@ -1,3 +1,5 @@
 **/.pbi/localSettings.json
 **/.pbi/cache.abf
 **/.venv/
+**/.fab-test-tools/
+**/fab-test-results/
