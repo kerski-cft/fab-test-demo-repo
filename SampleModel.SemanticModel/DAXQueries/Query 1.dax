@@ -1,0 +1,17 @@
+DEFINE
+
+	FUNCTION RelationshipTests.ANY.Tests  = () => 
+		PQL.Assert.Relationship.ShouldExist("Date Dimension relationship with marvel fact exists","MarvelFact","DateID","DateDim","DateID","Many","One")
+
+EVALUATE RelationshipTests.ANY.Tests()
+/*DEFINE
+
+	FUNCTION RelationshipTests.ANY.Tests  = () => 
+		UNION(
+		PQL.Assert.Relationship.ShouldExist("Test 1","MarvelFact","DateID","DateDim","DateID"),
+		PQL.Assert.Relationship.ShouldExist("Test 1","MarvelFact","DateID","DateDim","DateID","Many","One"))
+		
+EVALUATE RelationshipTests.ANY.Tests()
+
+EVALUATE INFO.RELATIONSHIPS()
+EVALUATE INFO.TABLES()*/
