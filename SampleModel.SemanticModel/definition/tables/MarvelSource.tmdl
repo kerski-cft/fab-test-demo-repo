@@ -6,6 +6,7 @@ table MarvelSource
 		dataType: int64
 		isHidden
 		formatString: 0
+		isAvailableInMdx: false
 		lineageTag: 90efbd2f-4c8e-4802-9c30-8a365e8386ad
 		summarizeBy: sum
 		sourceColumn: page_id
@@ -17,6 +18,7 @@ table MarvelSource
 	column name
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: f2c44bae-5db7-41fc-a456-49eff0d7444d
 		summarizeBy: none
 		sourceColumn: name
@@ -28,6 +30,7 @@ table MarvelSource
 	column urlslug
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 1d36baa2-4bea-4ab5-9cc1-4bb760a78c37
 		summarizeBy: none
 		sourceColumn: urlslug
@@ -39,6 +42,7 @@ table MarvelSource
 	column ID
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: caa99830-9bba-472c-afd6-22222592549a
 		summarizeBy: none
 		sourceColumn: ID
@@ -50,6 +54,7 @@ table MarvelSource
 	column ALIGN
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 0f7a14b4-c795-44cb-a3d4-9dcfc091ac3f
 		summarizeBy: none
 		sourceColumn: ALIGN
@@ -61,6 +66,7 @@ table MarvelSource
 	column EYE
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 20d4352e-62ac-46b2-a5e8-052180eded7e
 		summarizeBy: none
 		sourceColumn: EYE
@@ -72,6 +78,7 @@ table MarvelSource
 	column HAIR
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: ea60ac25-df49-4c18-b092-846a7f4c17b2
 		summarizeBy: none
 		sourceColumn: HAIR
@@ -83,6 +90,7 @@ table MarvelSource
 	column SEX
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 7bffbbad-78b7-4f16-9bca-111612f54300
 		summarizeBy: none
 		sourceColumn: SEX
@@ -94,6 +102,7 @@ table MarvelSource
 	column GSM
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 55c8d845-32d9-44fe-88c9-44a680eeafac
 		summarizeBy: none
 		sourceColumn: GSM
@@ -105,6 +114,7 @@ table MarvelSource
 	column ALIVE
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: a6b3d8cc-9410-460c-891e-25e80b772693
 		summarizeBy: none
 		sourceColumn: ALIVE
@@ -117,6 +127,7 @@ table MarvelSource
 		dataType: int64
 		isHidden
 		formatString: 0
+		isAvailableInMdx: false
 		lineageTag: 402cfdd7-08ab-478e-a039-d3abc7f0841c
 		summarizeBy: sum
 		sourceColumn: APPEARANCES
@@ -128,6 +139,7 @@ table MarvelSource
 	column 'FIRST APPEARANCE'
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 7e67c78a-607b-4a89-9b09-5ada2a2581f0
 		summarizeBy: none
 		sourceColumn: FIRST APPEARANCE
@@ -140,6 +152,7 @@ table MarvelSource
 		dataType: int64
 		isHidden
 		formatString: 0
+		isAvailableInMdx: false
 		lineageTag: 1ed89e36-864d-414c-9d19-afb0e40a72f1
 		summarizeBy: sum
 		sourceColumn: Year

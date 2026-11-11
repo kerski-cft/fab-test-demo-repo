@@ -13,6 +13,7 @@ table _Measures
 
 	column 'Measure Group'
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 44fff03e-a594-49a4-ad57-20aa566fcebc
 		isNameInferred
 		sourceColumn: [Measure Group]

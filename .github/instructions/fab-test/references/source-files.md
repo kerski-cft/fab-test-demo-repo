@@ -1,0 +1,30 @@
+# Source Files
+
+| File | Purpose |
+|------|---------|
+| `scripts/fab_test.py` | CLI entry point — argument parser, artifact discovery, subprocess dispatch |
+| `scripts/fab_test_registry.py` | Analyzer registry tables, scopes, and artifact discovery |
+| `scripts/_run_targets.py` | Target resolution for a run: workspace and `WS.Workspace/NAME` targets, `--from-workspace` reports, and the target recorded in `run.json` |
+| `scripts/_readiness.py` | Tool resolution and readiness: `resolve_tool`, `preflight_error`, `check_readiness` (what `doctor`, `explain` and every run consult) |
+| `scripts/_command_builders.py` | Per-analyzer command builders (`build_<name>_command`, `_COMMAND_BUILDERS`, `build_command`) and the rule-overlay path resolvers |
+| `scripts/invoke_tabular_editor_bpa.py` | BPA subprocess wrapper |
+| `scripts/invoke_pbir_inspector.py` | PBIR Inspector subprocess wrapper |
+| `scripts/invoke_pql_test.py` | pql-test subprocess wrapper (venv-aware lookup, native JSON parsing) |
+| `scripts/invoke_pqlint.py` | pqlint subprocess wrapper |
+| `scripts/invoke_rdl_lint.py` | `rdl` CLI wrapper — envelope, `attach_report`, malformed-file handling; the pure rule logic lives in `_rdl_lint.py` |
+| `scripts/_rdl_lint.py` | `rdl`'s rule engine — namespace-agnostic XML parsing, the catalog loader and its validation, the `CHECKS` dispatch table, `run_checks`, the `test_results` builder |
+| `scripts/_rdl_checks_query.py`, `scripts/_rdl_checks_report.py`, `scripts/_rdl_common.py` | `rdl`'s check functions by family (schema/data source/query; parameters/layout/subreports/accessibility) and the helpers they share |
+| `scripts/invoke_playwright.py` | Playwright validation wrapper |
+| `scripts/_playwright_changed.py` | `playwright --changed-since`: the deployed reports a Git change touches |
+| `scripts/invoke_playwright_dependencies.py` | Semantic-model dependency discovery wrapper |
+| `scripts/playwright_validation/config.py` | `.env` / environment configuration loader |
+| `scripts/playwright_validation/test_cases.py` | Report × page × bookmark case expansion |
+| `scripts/playwright_validation/embed_config.py` | Power BI JavaScript embed config builder |
+| `scripts/playwright_validation/power_bi_api.py` | Power BI REST API token helpers |
+| `scripts/playwright_validation/fabric_service_client.py` | Azure Identity service client for Fabric/Power BI REST APIs |
+| `scripts/playwright_validation/resolver.py` | Environment/workspace/report resolution |
+| `scripts/playwright_validation/render_spec.py` | pytest-playwright spec that embeds reports (ships in the package; `tests/test_playwright_visual.py` holds its unit tests) |
+| `scripts/playwright_validation/execution_config.py` | Optional execution YAML: selector (`--playwright-config` > `PLAYWRIGHT_CONFIG_PATH` > `playwright_config`), validation, and the shared `--playwright-config`/`--workers`/`--headed`/`--slow-mo` flags |
+| `scripts/playwright_validation/execution_runtime.py` | Credential-safe preparation: service credentials, worker precedence, launch overrides, native-report placement, redaction, and the unexecuted-case check |
+| `scripts/playwright_validation/execution_plugin.py` | pytest plugin loaded only for a selected YAML or a visibility override; registers fixtures after pytest-playwright so Azure/launch settings take effect |
+| `scripts/_analyzer_envelope.py` | Shared envelope schema builder |

@@ -10,13 +10,3 @@ relationship a76fa353-40b3-f2ec-ca5a-054be4380276
 	fromColumn: MarvelFact.DateID
 	toColumn: DateDim.DateID
 
-relationship 609abfea-fc00-462c-a782-5421e4126400
-	joinOnDateBehavior: datePartOnly
-	fromColumn: DateDim.Date
-	toColumn: LocalDateTable_eb7b31dc-3d28-4ac4-b9cd-bb346f8eff46.Date
-
-relationship f40fc02c-c745-4222-be7e-3c6b75e504cf
-	joinOnDateBehavior: datePartOnly
-	fromColumn: DataTypes.Date
-	toColumn: LocalDateTable_22765e38-a72e-4890-b33f-7892cef86653.Date
-
