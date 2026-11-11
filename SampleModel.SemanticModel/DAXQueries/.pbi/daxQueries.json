@@ -3,7 +3,6 @@
   "tabOrder": [
     "DataQuality.ANY.Tests",
     "QuickChecks.PROD.Tests",
-    "BestPractices.DEV.Tests",
     "Example.DEV.Tests",
     "Retrieve Tests",
     "Query 1"

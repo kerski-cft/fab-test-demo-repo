@@ -1416,24 +1416,6 @@ function 'DataQuality.ANY.Tests' = ```
 		```
 	lineageTag: 3cda41aa-12e0-4574-b77c-10268f39f276
 
-function 'BestPractices.DEV.Tests' = ```
-		() =>
-			UNION (
-				// Error Prevention checks
-				PQL.Assert.BP.CheckErrorPrevention(),
-				
-				// Formatting checks
-				PQL.Assert.BP.CheckFormatting(),
-				
-				// DAX Expression checks
-				PQL.Assert.BP.CheckDAXExpressions(),
-				
-				// Performance checks
-				PQL.Assert.BP.CheckPerformance()
-			)
-		```
-	lineageTag: d4814a62-07ca-478e-ae34-3c37b5de3b52
-
 function 'QuickChecks.PROD.Tests' =
 		() =>
 				UNION(

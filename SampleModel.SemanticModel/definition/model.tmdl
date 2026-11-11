@@ -20,7 +20,7 @@ queryGroup Parameters
 
 annotation PBI_QueryOrder = ["MarvelFact","DateDim","EyeColorDim","AlignmentDim","DateDimBlank","MarvelSource","WebURL","DataTypes"]
 
-annotation __PBI_TimeIntelligenceEnabled = 0
+annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode","DaxQueryView_Desktop","DaxCopilot_Change_Accepted_In_Desktop","MCP-PBIModeling","TMDLView_Desktop"]
 
@@ -32,6 +32,9 @@ ref table AlignmentDim
 ref table DataTypes
 ref table _Measures
 ref table Timezone
+ref table DateTableTemplate_191a3c90-6976-4a8b-bea3-027cd0ea2fc7
+ref table LocalDateTable_eb7b31dc-3d28-4ac4-b9cd-bb346f8eff46
+ref table LocalDateTable_22765e38-a72e-4890-b33f-7892cef86653
 
 ref cultureInfo en-US
 
