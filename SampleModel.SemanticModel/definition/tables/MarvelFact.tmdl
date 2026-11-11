@@ -2,7 +2,7 @@ table MarvelFact
 	lineageTag: 743cae73-8a6b-4e03-af99-d194d47d16af
 
 	measure 'Number of Characters' = ```
-			COUNTROWS('MarvelFact') + 0
+			COUNTROWS('MarvelFact')
 			
 			```
 		formatString: 0
@@ -126,9 +126,10 @@ table MarvelFact
 				    #"Merged Queries2" = Table.NestedJoin(#"Removed Columns3", {"ALIGN"}, AlignmentDim, {"AlignmentKey"}, "AlignmentDim", JoinKind.LeftOuter),
 				    #"Expanded AlignmentDim" = Table.ExpandTableColumn(#"Merged Queries2", "AlignmentDim", {"AlignmentID"}, {"AlignmentID"}),
 				    #"Removed Columns4" = Table.RemoveColumns(#"Expanded AlignmentDim",{"ID", "ALIGN", "EYE"}),
-				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns4",{{"name", "Name"}, {"APPEARANCES", "Appearances"}, {"page_id", "ID"}})
+				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns4",{{"name", "Name"}, {"APPEARANCES", "Appearances"}, {"page_id", "ID"}}),
+				    #"Sorted Rows" = Table.Sort(#"Renamed Columns1",{{"ID", Order.Ascending}})
 				in
-				    #"Renamed Columns1"
+				    #"Sorted Rows"
 
 	annotation PBI_ResultType = Table
 

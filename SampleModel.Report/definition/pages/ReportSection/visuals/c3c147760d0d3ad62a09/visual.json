@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "c3c147760d0d3ad62a09",
   "position": {
-    "x": 10.14977973568282,
-    "y": 173.6740088105727,
+    "x": 9.72644376899696,
+    "y": 240.24316109422494,
     "z": 4000,
     "height": 186.07929515418502,
     "width": 219.91189427312776,
@@ -81,7 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Bad'"
+                                "Value": "'Good'"
                               }
                             }
                           ]
@@ -125,5 +125,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "776433f26fd70ae536cc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AlignmentDim"
+              }
+            },
+            "Property": "Alignment"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

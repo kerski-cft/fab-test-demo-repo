@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "8b88b00183ddfc0fd7ff",
+  "displayName": "Duplicate of Page 2",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
